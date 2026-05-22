@@ -201,6 +201,31 @@ func (m *Manager) Replay(
 	return nil
 }
 
+func (m *Manager) ReplayFrom(
+	sequenceID uint64,
+	handler func(Entry) error,
+) error {
+
+	entry, ok := m.Find(
+		sequenceID,
+	)
+
+	if !ok {
+
+		return m.Replay(handler)
+	}
+
+	path := m.segmentPath(
+		entry.SegmentID,
+	)
+
+	return ReplayFromOffset(
+		path,
+		entry.Offset,
+		handler,
+	)
+}
+
 func (m *Manager) Find(
 	sequenceID uint64,
 ) (IndexEntry, bool) {
