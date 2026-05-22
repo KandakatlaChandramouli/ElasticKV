@@ -3,6 +3,7 @@ package benchmarks
 import (
 	"sync"
 	"testing"
+	"time"
 
 	"github.com/KandakatlaChandramouli/ElasticKV/internal/adaptive"
 )
@@ -12,14 +13,14 @@ func BenchmarkAdaptiveController(
 ) {
 
 	controller := adaptive.NewController(
-		10000,
+		1024,
 	)
 
 	var wg sync.WaitGroup
 
 	b.ResetTimer()
 
-	for g := 0; g < 128; g++ {
+	for g := 0; g < 256; g++ {
 
 		wg.Add(1)
 
@@ -27,11 +28,16 @@ func BenchmarkAdaptiveController(
 
 			defer wg.Done()
 
-			for i := 0; i < b.N/128; i++ {
+			for i := 0; i < b.N/256; i++ {
 
 				ok := controller.Allow()
 
 				if ok {
+
+					time.Sleep(
+						time.Microsecond,
+					)
+
 					controller.Complete()
 				}
 			}
@@ -60,5 +66,10 @@ func BenchmarkAdaptiveController(
 	b.Logf(
 		"Threshold = %d",
 		metrics.Threshold,
+	)
+
+	b.Logf(
+		"Final Load = %d",
+		metrics.Load,
 	)
 }
