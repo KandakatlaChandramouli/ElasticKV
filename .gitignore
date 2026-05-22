@@ -12,3 +12,4 @@ vendor/
 *.log
 *.wal
 *.snapshot
+*.sst
