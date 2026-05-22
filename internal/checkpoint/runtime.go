@@ -44,7 +44,7 @@ func (r *Runtime) Snapshot(
 
 	defer r.Mutex.RUnlock()
 
-	return Save(
+	return SaveBinary(
 		path,
 		r.State,
 		r.Metadata,
@@ -61,7 +61,7 @@ func (r *Runtime) Restore(
 
 	state,
 		metadata,
-		err := Load(path)
+		err := LoadBinary(path)
 
 	if err != nil {
 		return err
