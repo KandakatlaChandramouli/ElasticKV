@@ -1,0 +1,9 @@
+*.out
+*.test
+*.prof
+*.exe
+*.log
+*.tmp
+.DS_Store
+coverage.out
+vendor/
