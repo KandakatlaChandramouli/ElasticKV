@@ -2,7 +2,6 @@ package transport
 
 import (
 	"bufio"
-	"bytes"
 	"sync"
 	"sync/atomic"
 	"time"
@@ -53,7 +52,11 @@ func (r *WireBatchReplicator) Start() {
 
 		defer ticker.Stop()
 
-		batch := make([]ReplicationFrame, 0, r.BatchSize)
+		batch := make(
+			[]ReplicationFrame,
+			0,
+			r.BatchSize,
+		)
 
 		flush := func() {
 
@@ -61,9 +64,7 @@ func (r *WireBatchReplicator) Start() {
 				return
 			}
 
-			buffer := bytes.NewBuffer(
-				make([]byte, 0, 1024*len(batch)),
-			)
+			buffer := AcquireBuffer()
 
 			writer := bufio.NewWriterSize(
 				buffer,
@@ -93,23 +94,21 @@ func (r *WireBatchReplicator) Start() {
 
 			err := writer.Flush()
 
-			if err != nil {
-				batch = batch[:0]
-				return
+			if err == nil {
+
+				_, err = r.Client.Connection.Write(
+					buffer.Bytes(),
+				)
 			}
 
-			_, err = r.Client.Connection.Write(
-				buffer.Bytes(),
-			)
+			if err == nil {
 
-			if err != nil {
-				batch = batch[:0]
-				return
+				r.Sent.Add(success)
+
+				r.Batches.Add(1)
 			}
 
-			r.Sent.Add(success)
-
-			r.Batches.Add(1)
+			ReleaseBuffer(buffer)
 
 			batch = batch[:0]
 		}
