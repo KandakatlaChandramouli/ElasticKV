@@ -1,0 +1,75 @@
+{"Time":"2026-05-22T15:51:26.355310981Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft"}
+{"Time":"2026-05-22T15:51:26.369016636Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:26.36904818Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:26.369053387Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft\n"}
+{"Time":"2026-05-22T15:51:26.369060865Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:26.369068277Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Test":"BenchmarkRaftAppend"}
+{"Time":"2026-05-22T15:51:26.369072227Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Test":"BenchmarkRaftAppend","Output":"=== RUN   BenchmarkRaftAppend\n"}
+{"Time":"2026-05-22T15:51:26.369077683Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Test":"BenchmarkRaftAppend","Output":"BenchmarkRaftAppend\n"}
+{"Time":"2026-05-22T15:51:26.372883067Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Test":"BenchmarkRaftAppend","Output":"BenchmarkRaftAppend-2   \t       1\t      2796 ns/op\n"}
+{"Time":"2026-05-22T15:51:26.372969863Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:26.37333469Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft\t0.014s\n"}
+{"Time":"2026-05-22T15:51:26.37335027Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft","Elapsed":0.018}
+{"Time":"2026-05-22T15:51:26.374139211Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election"}
+{"Time":"2026-05-22T15:51:26.387570498Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:26.387593993Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:26.387599276Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election\n"}
+{"Time":"2026-05-22T15:51:26.387603991Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:26.387610428Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Test":"BenchmarkElection"}
+{"Time":"2026-05-22T15:51:26.387614541Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Test":"BenchmarkElection","Output":"=== RUN   BenchmarkElection\n"}
+{"Time":"2026-05-22T15:51:26.387621375Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Test":"BenchmarkElection","Output":"BenchmarkElection\n"}
+{"Time":"2026-05-22T15:51:26.39858382Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Test":"BenchmarkElection","Output":"BenchmarkElection-2   \t       1\t       615.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:26.399028118Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:26.399076387Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election\t0.025s\n"}
+{"Time":"2026-05-22T15:51:26.399100045Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/election","Elapsed":0.025}
+{"Time":"2026-05-22T15:51:26.403770193Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat"}
+{"Time":"2026-05-22T15:51:26.426968224Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:26.426997668Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:26.427004275Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat\n"}
+{"Time":"2026-05-22T15:51:26.427010225Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:26.427017687Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Test":"BenchmarkHeartbeat"}
+{"Time":"2026-05-22T15:51:26.427023101Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Test":"BenchmarkHeartbeat","Output":"=== RUN   BenchmarkHeartbeat\n"}
+{"Time":"2026-05-22T15:51:26.427029154Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Test":"BenchmarkHeartbeat","Output":"BenchmarkHeartbeat\n"}
+{"Time":"2026-05-22T15:51:26.436623061Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Test":"BenchmarkHeartbeat","Output":"BenchmarkHeartbeat-2   \t"}
+{"Time":"2026-05-22T15:51:26.436719905Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Test":"BenchmarkHeartbeat","Output":"       1\t       432.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:26.436732851Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:26.437136063Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat\t0.033s\n"}
+{"Time":"2026-05-22T15:51:26.43715011Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/heartbeat","Elapsed":0.033}
+{"Time":"2026-05-22T15:51:26.438513409Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log"}
+{"Time":"2026-05-22T15:51:26.453502138Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:26.453583239Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:26.453591053Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log\n"}
+{"Time":"2026-05-22T15:51:26.45359704Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:26.453603603Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Test":"BenchmarkRaftLog"}
+{"Time":"2026-05-22T15:51:26.453616928Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Test":"BenchmarkRaftLog","Output":"=== RUN   BenchmarkRaftLog\n"}
+{"Time":"2026-05-22T15:51:26.45362263Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Test":"BenchmarkRaftLog","Output":"BenchmarkRaftLog\n"}
+{"Time":"2026-05-22T15:51:26.464666782Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Test":"BenchmarkRaftLog","Output":"BenchmarkRaftLog-2   \t       1\t      1062 ns/op\n"}
+{"Time":"2026-05-22T15:51:26.465098728Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:26.465137253Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log\t0.027s\n"}
+{"Time":"2026-05-22T15:51:26.465147028Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/log","Elapsed":0.027}
+{"Time":"2026-05-22T15:51:26.477831569Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore"}
+{"Time":"2026-05-22T15:51:26.494228267Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:26.494277008Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:26.494282285Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore\n"}
+{"Time":"2026-05-22T15:51:26.494287851Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:26.494302221Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Test":"BenchmarkLogstore"}
+{"Time":"2026-05-22T15:51:26.494326992Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Test":"BenchmarkLogstore","Output":"=== RUN   BenchmarkLogstore\n"}
+{"Time":"2026-05-22T15:51:26.494333363Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Test":"BenchmarkLogstore","Output":"BenchmarkLogstore\n"}
+{"Time":"2026-05-22T15:51:26.503596142Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Test":"BenchmarkLogstore","Output":"BenchmarkLogstore-2   \t"}
+{"Time":"2026-05-22T15:51:26.503640042Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Test":"BenchmarkLogstore","Output":"       1\t       353.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:26.50367218Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:26.504080627Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore\t0.026s\n"}
+{"Time":"2026-05-22T15:51:26.504094639Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/logstore","Elapsed":0.026}
+{"Time":"2026-05-22T15:51:26.505089496Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication"}
+{"Time":"2026-05-22T15:51:26.515569091Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:26.515591249Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:26.515597246Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication\n"}
+{"Time":"2026-05-22T15:51:26.51560253Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:26.515616053Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Test":"BenchmarkReplication"}
+{"Time":"2026-05-22T15:51:26.515620747Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Test":"BenchmarkReplication","Output":"=== RUN   BenchmarkReplication\n"}
+{"Time":"2026-05-22T15:51:26.515625515Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Test":"BenchmarkReplication","Output":"BenchmarkReplication\n"}
+{"Time":"2026-05-22T15:51:26.523448625Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Test":"BenchmarkReplication","Output":"BenchmarkReplication-2   \t"}
+{"Time":"2026-05-22T15:51:26.523498849Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Test":"BenchmarkReplication","Output":"       1\t       425.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:26.523555665Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:26.524038128Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication\t0.019s\n"}
+{"Time":"2026-05-22T15:51:26.524054865Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/raft/replication","Elapsed":0.019}

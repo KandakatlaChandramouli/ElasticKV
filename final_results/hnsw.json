@@ -1,0 +1,13 @@
+{"Time":"2026-05-22T15:49:46.577010377Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw"}
+{"Time":"2026-05-22T15:49:46.58453521Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:49:46.584600565Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:49:46.584618813Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw\n"}
+{"Time":"2026-05-22T15:49:46.584645502Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:49:46.584677486Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Test":"BenchmarkHNSWSearch"}
+{"Time":"2026-05-22T15:49:46.584682855Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Test":"BenchmarkHNSWSearch","Output":"=== RUN   BenchmarkHNSWSearch\n"}
+{"Time":"2026-05-22T15:49:46.584704722Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Test":"BenchmarkHNSWSearch","Output":"BenchmarkHNSWSearch\n"}
+{"Time":"2026-05-22T15:51:24.704760715Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Test":"BenchmarkHNSWSearch","Output":"BenchmarkHNSWSearch-2   \t"}
+{"Time":"2026-05-22T15:51:24.705456262Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Test":"BenchmarkHNSWSearch","Output":"       1\t  17724876 ns/op\n"}
+{"Time":"2026-05-22T15:51:24.705482753Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:24.705592786Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw\t98.128s\n"}
+{"Time":"2026-05-22T15:51:24.705614887Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/hnsw","Elapsed":98.129}

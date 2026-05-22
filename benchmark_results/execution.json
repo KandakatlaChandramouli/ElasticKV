@@ -1,0 +1,6 @@
+{"ImportPath":"./benchmarks/execution/...","Action":"build-output","Output":"# ./benchmarks/execution/...\n"}
+{"ImportPath":"./benchmarks/execution/...","Action":"build-output","Output":"pattern ./benchmarks/execution/...: lstat ./benchmarks/execution/: no such file or directory\n"}
+{"ImportPath":"./benchmarks/execution/...","Action":"build-fail"}
+{"Time":"2026-05-22T15:51:29.635827175Z","Action":"start","Package":"./benchmarks/execution/..."}
+{"Time":"2026-05-22T15:51:29.635899588Z","Action":"output","Package":"./benchmarks/execution/...","Output":"FAIL\t./benchmarks/execution/... [setup failed]\n"}
+{"Time":"2026-05-22T15:51:29.635906035Z","Action":"fail","Package":"./benchmarks/execution/...","Elapsed":0,"FailedBuild":"./benchmarks/execution/..."}

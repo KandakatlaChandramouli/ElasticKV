@@ -1,0 +1,76 @@
+{"Time":"2026-05-22T15:51:30.83363564Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch"}
+{"Time":"2026-05-22T15:51:30.837828592Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:30.839468135Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:30.839493883Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch\n"}
+{"Time":"2026-05-22T15:51:30.839523928Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:30.839531385Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Test":"BenchmarkVectorSearch"}
+{"Time":"2026-05-22T15:51:30.839535733Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Test":"BenchmarkVectorSearch","Output":"=== RUN   BenchmarkVectorSearch\n"}
+{"Time":"2026-05-22T15:51:30.839543217Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Test":"BenchmarkVectorSearch","Output":"BenchmarkVectorSearch\n"}
+{"Time":"2026-05-22T15:51:30.840133512Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Test":"BenchmarkVectorSearch","Output":"BenchmarkVectorSearch-2   \t       1\t       290.0 ns/op\t       0 B/op\t       0 allocs/op\n"}
+{"Time":"2026-05-22T15:51:30.84022393Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:30.840620902Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch\t0.007s\n"}
+{"Time":"2026-05-22T15:51:30.840644808Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch","Elapsed":0.007}
+{"Time":"2026-05-22T15:51:30.841459115Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine"}
+{"Time":"2026-05-22T15:51:30.847078199Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:30.847113587Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:30.847128675Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine\n"}
+{"Time":"2026-05-22T15:51:30.847159989Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:30.847174417Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Test":"BenchmarkCosine"}
+{"Time":"2026-05-22T15:51:30.847178469Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Test":"BenchmarkCosine","Output":"=== RUN   BenchmarkCosine\n"}
+{"Time":"2026-05-22T15:51:30.847191224Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Test":"BenchmarkCosine","Output":"BenchmarkCosine\n"}
+{"Time":"2026-05-22T15:51:30.849678456Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Test":"BenchmarkCosine","Output":"BenchmarkCosine-2   \t"}
+{"Time":"2026-05-22T15:51:30.849714188Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Test":"BenchmarkCosine","Output":"       1\t       366.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:30.849779322Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:30.85014442Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine\t0.009s\n"}
+{"Time":"2026-05-22T15:51:30.850158191Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/cosine","Elapsed":0.009}
+{"Time":"2026-05-22T15:51:30.851004819Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap"}
+{"Time":"2026-05-22T15:51:30.855629639Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:30.855690605Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:30.855709768Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap\n"}
+{"Time":"2026-05-22T15:51:30.855749915Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:30.855768877Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Test":"BenchmarkHeap"}
+{"Time":"2026-05-22T15:51:30.855773831Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Test":"BenchmarkHeap","Output":"=== RUN   BenchmarkHeap\n"}
+{"Time":"2026-05-22T15:51:30.855788254Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Test":"BenchmarkHeap","Output":"BenchmarkHeap\n"}
+{"Time":"2026-05-22T15:51:30.857937779Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Test":"BenchmarkHeap","Output":"BenchmarkHeap-2   \t"}
+{"Time":"2026-05-22T15:51:30.857981764Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Test":"BenchmarkHeap","Output":"       1\t       227.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:30.858022434Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:30.85836805Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap\t0.007s\n"}
+{"Time":"2026-05-22T15:51:30.858380703Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/heap","Elapsed":0.007}
+{"Time":"2026-05-22T15:51:30.859133627Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2"}
+{"Time":"2026-05-22T15:51:30.862182122Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:30.862248952Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:30.862255964Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2\n"}
+{"Time":"2026-05-22T15:51:30.862261153Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:30.862267094Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Test":"BenchmarkL2"}
+{"Time":"2026-05-22T15:51:30.862518003Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Test":"BenchmarkL2","Output":"=== RUN   BenchmarkL2\n"}
+{"Time":"2026-05-22T15:51:30.862527055Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Test":"BenchmarkL2","Output":"BenchmarkL2\n"}
+{"Time":"2026-05-22T15:51:30.864599478Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Test":"BenchmarkL2","Output":"BenchmarkL2-2   \t       1\t       276.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:30.864681905Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:30.86502885Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2\t0.006s\n"}
+{"Time":"2026-05-22T15:51:30.865040202Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/l2","Elapsed":0.006}
+{"Time":"2026-05-22T15:51:30.865855028Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd"}
+{"Time":"2026-05-22T15:51:30.868661644Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:30.868693411Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:30.868724011Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd\n"}
+{"Time":"2026-05-22T15:51:30.868744976Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:30.868759295Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Test":"BenchmarkSimd"}
+{"Time":"2026-05-22T15:51:30.868763465Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Test":"BenchmarkSimd","Output":"=== RUN   BenchmarkSimd\n"}
+{"Time":"2026-05-22T15:51:30.868775487Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Test":"BenchmarkSimd","Output":"BenchmarkSimd\n"}
+{"Time":"2026-05-22T15:51:30.87122911Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Test":"BenchmarkSimd","Output":"BenchmarkSimd-2   \t"}
+{"Time":"2026-05-22T15:51:30.871282976Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Test":"BenchmarkSimd","Output":"       1\t       267.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:30.871339391Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:30.871730004Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd\t0.006s\n"}
+{"Time":"2026-05-22T15:51:30.871745601Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/simd","Elapsed":0.006}
+{"Time":"2026-05-22T15:51:30.872571632Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk"}
+{"Time":"2026-05-22T15:51:30.87749687Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Output":"goos: linux\n"}
+{"Time":"2026-05-22T15:51:30.877619994Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Output":"goarch: amd64\n"}
+{"Time":"2026-05-22T15:51:30.87763366Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk\n"}
+{"Time":"2026-05-22T15:51:30.877638816Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-22T15:51:30.877644771Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Test":"BenchmarkTopk"}
+{"Time":"2026-05-22T15:51:30.877648909Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Test":"BenchmarkTopk","Output":"=== RUN   BenchmarkTopk\n"}
+{"Time":"2026-05-22T15:51:30.877653367Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Test":"BenchmarkTopk","Output":"BenchmarkTopk\n"}
+{"Time":"2026-05-22T15:51:30.881190735Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Test":"BenchmarkTopk","Output":"BenchmarkTopk-2   \t"}
+{"Time":"2026-05-22T15:51:30.881254134Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Test":"BenchmarkTopk","Output":"       1\t       333.0 ns/op\n"}
+{"Time":"2026-05-22T15:51:30.88129783Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Output":"PASS\n"}
+{"Time":"2026-05-22T15:51:30.88177635Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk\t0.009s\n"}
+{"Time":"2026-05-22T15:51:30.881793622Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/vectorsearch/topk","Elapsed":0.009}
