@@ -3,6 +3,7 @@ package transport
 import (
 	"bytes"
 	"encoding/binary"
+	"io"
 )
 
 type ReplicationFrame struct {
@@ -14,29 +15,47 @@ func EncodeFrame(
 	frame ReplicationFrame,
 ) ([]byte, error) {
 
-	buf := new(bytes.Buffer)
-
-	if err := binary.Write(
-		buf,
-		binary.LittleEndian,
-		frame.SequenceID,
-	); err != nil {
-		return nil, err
-	}
-
 	payloadLength := uint32(
 		len(frame.Payload),
 	)
 
-	if err := binary.Write(
+	totalSize := uint32(
+		8 + 4 + payloadLength,
+	)
+
+	buf := new(bytes.Buffer)
+
+	err := binary.Write(
 		buf,
 		binary.LittleEndian,
-		payloadLength,
-	); err != nil {
+		totalSize,
+	)
+
+	if err != nil {
 		return nil, err
 	}
 
-	_, err := buf.Write(frame.Payload)
+	err = binary.Write(
+		buf,
+		binary.LittleEndian,
+		frame.SequenceID,
+	)
+
+	if err != nil {
+		return nil, err
+	}
+
+	err = binary.Write(
+		buf,
+		binary.LittleEndian,
+		payloadLength,
+	)
+
+	if err != nil {
+		return nil, err
+	}
+
+	_, err = buf.Write(frame.Payload)
 
 	if err != nil {
 		return nil, err
@@ -46,14 +65,24 @@ func EncodeFrame(
 }
 
 func DecodeFrame(
-	data []byte,
+	reader io.Reader,
 ) (ReplicationFrame, error) {
 
-	reader := bytes.NewReader(data)
+	var totalSize uint32
+
+	err := binary.Read(
+		reader,
+		binary.LittleEndian,
+		&totalSize,
+	)
+
+	if err != nil {
+		return ReplicationFrame{}, err
+	}
 
 	var sequenceID uint64
 
-	err := binary.Read(
+	err = binary.Read(
 		reader,
 		binary.LittleEndian,
 		&sequenceID,
@@ -77,7 +106,10 @@ func DecodeFrame(
 
 	payload := make([]byte, payloadLength)
 
-	_, err = reader.Read(payload)
+	_, err = io.ReadFull(
+		reader,
+		payload,
+	)
 
 	if err != nil {
 		return ReplicationFrame{}, err

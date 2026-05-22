@@ -1,6 +1,7 @@
 package transport
 
 import (
+	"bufio"
 	"io"
 	"net"
 	"sync/atomic"
@@ -54,11 +55,14 @@ func (s *Server) handleConn(
 
 	defer conn.Close()
 
-	buffer := make([]byte, 8192)
+	reader := bufio.NewReaderSize(
+		conn,
+		64*1024,
+	)
 
 	for {
 
-		n, err := conn.Read(buffer)
+		_, err := DecodeFrame(reader)
 
 		if err != nil {
 
@@ -67,14 +71,6 @@ func (s *Server) handleConn(
 			}
 
 			return
-		}
-
-		_, err = DecodeFrame(
-			buffer[:n],
-		)
-
-		if err != nil {
-			continue
 		}
 
 		s.Received.Add(1)

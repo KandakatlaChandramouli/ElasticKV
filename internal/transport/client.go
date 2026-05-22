@@ -1,11 +1,13 @@
 package transport
 
 import (
+	"bufio"
 	"net"
 )
 
 type Client struct {
 	Connection net.Conn
+	Writer     *bufio.Writer
 }
 
 func NewClient(
@@ -23,6 +25,10 @@ func NewClient(
 
 	return &Client{
 		Connection: conn,
+		Writer: bufio.NewWriterSize(
+			conn,
+			64*1024,
+		),
 	}, nil
 }
 
@@ -38,9 +44,13 @@ func (c *Client) Send(
 		return err
 	}
 
-	_, err = c.Connection.Write(data)
+	_, err = c.Writer.Write(data)
 
-	return err
+	if err != nil {
+		return err
+	}
+
+	return c.Writer.Flush()
 }
 
 func (c *Client) Close() error {
