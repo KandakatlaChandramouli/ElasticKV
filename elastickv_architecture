@@ -1,0 +1,25 @@
+digraph ElasticKV {
+	rankdir=LR
+	bgcolor=black
+	node [color=lightblue fontcolor=black shape=box style=filled]
+	"SQL Planner"
+	"Query Runtime"
+	"HNSW Engine"
+	"Vector Search"
+	"GPU Runtime"
+	"CUDA Bridge"
+	"RDMA Layer"
+	"Raft Consensus"
+	SSTable
+	"RAG Pipeline"
+	"Distributed Runtime"
+	"SQL Planner" -> "Query Runtime"
+	"Query Runtime" -> "Vector Search"
+	"Vector Search" -> "HNSW Engine"
+	"Vector Search" -> "GPU Runtime"
+	"GPU Runtime" -> "CUDA Bridge"
+	"Distributed Runtime" -> "Raft Consensus"
+	"Distributed Runtime" -> "RDMA Layer"
+	"Query Runtime" -> SSTable
+	"Query Runtime" -> "RAG Pipeline"
+}
