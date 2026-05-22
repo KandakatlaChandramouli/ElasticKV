@@ -10,3 +10,4 @@ vendor/
 *.db
 *.db
 *.log
+*.wal
