@@ -1,12 +1,12 @@
-package vectorclock
+package hintedhandoff
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/hintedhandoff"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkHintedHandoff(
 	b *testing.B,
 ) {
 

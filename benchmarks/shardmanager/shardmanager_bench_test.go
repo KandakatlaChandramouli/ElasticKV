@@ -1,12 +1,12 @@
-package vectorclock
+package shardmanager
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/shardmanager"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkShardManager(
 	b *testing.B,
 ) {
 

@@ -1,4 +1,4 @@
-package vectorclock
+package placement
 
 import "sync/atomic"
 

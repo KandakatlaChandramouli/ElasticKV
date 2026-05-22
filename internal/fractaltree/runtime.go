@@ -1,4 +1,4 @@
-package vectorclock
+package fractaltree
 
 import "sync/atomic"
 

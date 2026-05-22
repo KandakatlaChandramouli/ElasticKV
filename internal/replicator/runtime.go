@@ -1,4 +1,4 @@
-package vectorclock
+package replicator
 
 import "sync/atomic"
 

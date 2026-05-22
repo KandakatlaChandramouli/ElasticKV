@@ -1,4 +1,4 @@
-package vectorclock
+package btree
 
 import "sync/atomic"
 

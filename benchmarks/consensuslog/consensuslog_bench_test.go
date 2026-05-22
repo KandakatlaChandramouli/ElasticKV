@@ -1,12 +1,12 @@
-package vectorclock
+package consensuslog
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/consensuslog"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkConsensusLog(
 	b *testing.B,
 ) {
 

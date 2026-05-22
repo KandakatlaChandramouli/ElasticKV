@@ -1,4 +1,4 @@
-package vectorclock
+package compactionplanner
 
 import "sync/atomic"
 

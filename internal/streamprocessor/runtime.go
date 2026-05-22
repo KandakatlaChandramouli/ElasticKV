@@ -1,4 +1,4 @@
-package vectorclock
+package streamprocessor
 
 import "sync/atomic"
 

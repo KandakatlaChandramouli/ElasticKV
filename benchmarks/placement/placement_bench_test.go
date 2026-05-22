@@ -1,12 +1,12 @@
-package vectorclock
+package placement
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/placement"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkPlacement(
 	b *testing.B,
 ) {
 

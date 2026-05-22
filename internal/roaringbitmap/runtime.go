@@ -1,4 +1,4 @@
-package vectorclock
+package roaringbitmap
 
 import "sync/atomic"
 

@@ -1,12 +1,12 @@
-package vectorclock
+package lsmtree
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/lsmtree"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkLSMTree(
 	b *testing.B,
 ) {
 

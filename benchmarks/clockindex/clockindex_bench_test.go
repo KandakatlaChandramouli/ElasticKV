@@ -1,12 +1,12 @@
-package vectorclock
+package clockindex
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/clockindex"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkClockIndex(
 	b *testing.B,
 ) {
 

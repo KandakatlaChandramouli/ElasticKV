@@ -1,12 +1,12 @@
-package vectorclock
+package roaringbitmap
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/roaringbitmap"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkRoaringBitmap(
 	b *testing.B,
 ) {
 

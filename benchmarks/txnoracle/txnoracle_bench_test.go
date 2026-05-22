@@ -1,12 +1,12 @@
-package vectorclock
+package txnoracle
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/txnoracle"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkTxnOracle(
 	b *testing.B,
 ) {
 

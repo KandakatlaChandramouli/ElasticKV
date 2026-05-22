@@ -1,12 +1,12 @@
-package vectorclock
+package columnstore
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/columnstore"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkColumnStore(
 	b *testing.B,
 ) {
 

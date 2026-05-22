@@ -1,12 +1,12 @@
-package vectorclock
+package vectorsearch
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorsearch"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkVectorSearch(
 	b *testing.B,
 ) {
 

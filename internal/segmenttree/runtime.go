@@ -1,4 +1,4 @@
-package vectorclock
+package segmenttree
 
 import "sync/atomic"
 

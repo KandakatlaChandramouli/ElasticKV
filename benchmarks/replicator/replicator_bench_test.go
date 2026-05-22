@@ -1,12 +1,12 @@
-package vectorclock
+package replicator
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/replicator"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkReplicator(
 	b *testing.B,
 ) {
 

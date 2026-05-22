@@ -1,4 +1,4 @@
-package vectorclock
+package hintedhandoff
 
 import "sync/atomic"
 

@@ -1,4 +1,4 @@
-package vectorclock
+package txnoracle
 
 import "sync/atomic"
 

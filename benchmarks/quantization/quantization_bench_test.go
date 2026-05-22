@@ -1,12 +1,12 @@
-package vectorclock
+package quantization
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/quantization"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkQuantization(
 	b *testing.B,
 ) {
 

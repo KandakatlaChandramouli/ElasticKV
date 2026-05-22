@@ -1,4 +1,4 @@
-package vectorclock
+package consensuslog
 
 import "sync/atomic"
 

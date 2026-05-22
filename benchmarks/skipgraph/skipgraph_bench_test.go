@@ -1,12 +1,12 @@
-package vectorclock
+package skipgraph
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/skipgraph"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkSkipGraph(
 	b *testing.B,
 ) {
 

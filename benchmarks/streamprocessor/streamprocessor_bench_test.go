@@ -1,12 +1,12 @@
-package vectorclock
+package streamprocessor
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/streamprocessor"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkStreamProcessor(
 	b *testing.B,
 ) {
 

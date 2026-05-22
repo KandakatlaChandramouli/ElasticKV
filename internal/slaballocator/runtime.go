@@ -1,4 +1,4 @@
-package vectorclock
+package slaballocator
 
 import "sync/atomic"
 

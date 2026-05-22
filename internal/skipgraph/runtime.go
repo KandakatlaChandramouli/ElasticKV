@@ -1,4 +1,4 @@
-package vectorclock
+package skipgraph
 
 import "sync/atomic"
 

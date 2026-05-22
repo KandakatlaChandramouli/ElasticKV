@@ -1,4 +1,4 @@
-package vectorclock
+package parquet
 
 import "sync/atomic"
 

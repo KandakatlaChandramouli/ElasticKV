@@ -1,12 +1,12 @@
-package vectorclock
+package compactionplanner
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/compactionplanner"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkCompactionPlanner(
 	b *testing.B,
 ) {
 

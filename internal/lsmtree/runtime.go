@@ -1,4 +1,4 @@
-package vectorclock
+package lsmtree
 
 import "sync/atomic"
 

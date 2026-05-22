@@ -1,12 +1,12 @@
-package vectorclock
+package parquet
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/parquet"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkParquet(
 	b *testing.B,
 ) {
 

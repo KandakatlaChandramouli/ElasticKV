@@ -1,12 +1,12 @@
-package vectorclock
+package btree
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/btree"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkBTree(
 	b *testing.B,
 ) {
 

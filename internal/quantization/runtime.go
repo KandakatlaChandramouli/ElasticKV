@@ -1,4 +1,4 @@
-package vectorclock
+package quantization
 
 import "sync/atomic"
 

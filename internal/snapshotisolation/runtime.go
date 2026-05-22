@@ -1,4 +1,4 @@
-package vectorclock
+package snapshotisolation
 
 import "sync/atomic"
 

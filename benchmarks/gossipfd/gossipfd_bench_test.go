@@ -1,12 +1,12 @@
-package vectorclock
+package gossipfd
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/gossipfd"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkGossipFD(
 	b *testing.B,
 ) {
 

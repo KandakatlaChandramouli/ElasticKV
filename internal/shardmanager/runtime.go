@@ -1,4 +1,4 @@
-package vectorclock
+package shardmanager
 
 import "sync/atomic"
 

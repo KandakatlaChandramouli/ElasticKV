@@ -1,12 +1,12 @@
-package vectorclock
+package queryplanner
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/queryplanner"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkQueryPlanner(
 	b *testing.B,
 ) {
 

@@ -1,12 +1,12 @@
-package vectorclock
+package readrepair
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/readrepair"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkReadRepair(
 	b *testing.B,
 ) {
 

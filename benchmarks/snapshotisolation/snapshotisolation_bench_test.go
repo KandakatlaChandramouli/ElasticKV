@@ -1,12 +1,12 @@
-package vectorclock
+package snapshotisolation
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/snapshotisolation"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkSnapshotIsolation(
 	b *testing.B,
 ) {
 

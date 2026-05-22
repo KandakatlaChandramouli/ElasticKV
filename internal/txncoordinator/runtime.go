@@ -1,4 +1,4 @@
-package vectorclock
+package txncoordinator
 
 import "sync/atomic"
 

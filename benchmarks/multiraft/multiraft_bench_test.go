@@ -1,12 +1,12 @@
-package vectorclock
+package multiraft
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/multiraft"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkMultiRaft(
 	b *testing.B,
 ) {
 

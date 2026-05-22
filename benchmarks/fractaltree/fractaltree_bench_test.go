@@ -1,12 +1,12 @@
-package vectorclock
+package fractaltree
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/fractaltree"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkFractalTree(
 	b *testing.B,
 ) {
 

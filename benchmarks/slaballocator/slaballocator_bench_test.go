@@ -1,12 +1,12 @@
-package vectorclock
+package slaballocator
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/slaballocator"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkSlabAllocator(
 	b *testing.B,
 ) {
 

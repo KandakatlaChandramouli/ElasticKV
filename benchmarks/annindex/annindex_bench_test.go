@@ -1,12 +1,12 @@
-package vectorclock
+package annindex
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/annindex"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkANNIndex(
 	b *testing.B,
 ) {
 

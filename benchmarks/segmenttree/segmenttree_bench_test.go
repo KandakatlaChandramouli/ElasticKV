@@ -1,12 +1,12 @@
-package vectorclock
+package segmenttree
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/segmenttree"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkSegmentTree(
 	b *testing.B,
 ) {
 

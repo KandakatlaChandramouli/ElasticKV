@@ -1,12 +1,12 @@
-package vectorclock
+package mmaparena
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/mmaparena"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkMMapArena(
 	b *testing.B,
 ) {
 

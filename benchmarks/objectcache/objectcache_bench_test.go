@@ -1,12 +1,12 @@
-package vectorclock
+package objectcache
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/objectcache"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkObjectCache(
 	b *testing.B,
 ) {
 

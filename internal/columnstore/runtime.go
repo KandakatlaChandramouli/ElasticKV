@@ -1,4 +1,4 @@
-package vectorclock
+package columnstore
 
 import "sync/atomic"
 

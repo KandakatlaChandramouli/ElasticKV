@@ -1,12 +1,12 @@
-package vectorclock
+package txncoordinator
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorclock"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/txncoordinator"
 )
 
-func BenchmarkVectorClock(
+func BenchmarkTxnCoordinator(
 	b *testing.B,
 ) {
 

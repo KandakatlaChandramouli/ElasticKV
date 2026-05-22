@@ -1,4 +1,4 @@
-package vectorclock
+package multiraft
 
 import "sync/atomic"
 

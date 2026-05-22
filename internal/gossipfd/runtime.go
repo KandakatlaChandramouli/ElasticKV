@@ -1,4 +1,4 @@
-package vectorclock
+package gossipfd
 
 import "sync/atomic"
 
