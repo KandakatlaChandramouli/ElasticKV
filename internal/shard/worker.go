@@ -2,6 +2,7 @@ package shard
 
 import (
 	"sync"
+	"sync/atomic"
 
 	"github.com/KandakatlaChandramouli/ElasticKV/internal/storage"
 )
@@ -12,11 +13,13 @@ type WriteRequest struct {
 }
 
 type Worker struct {
-	ID      uint64
-	Engine  *storage.Engine
-	Queue   chan WriteRequest
-	WG      sync.WaitGroup
-	Running bool
+	ID        uint64
+	Engine    *storage.Engine
+	Queue     chan WriteRequest
+	WG        sync.WaitGroup
+	Running   bool
+	Dropped   atomic.Uint64
+	Processed atomic.Uint64
 }
 
 func NewWorker(
@@ -51,8 +54,25 @@ func (w *Worker) Start() {
 			if err != nil {
 				continue
 			}
+
+			w.Processed.Add(1)
 		}
 	}()
+}
+
+func (w *Worker) TryEnqueue(
+	req WriteRequest,
+) bool {
+
+	select {
+
+	case w.Queue <- req:
+		return true
+
+	default:
+		w.Dropped.Add(1)
+		return false
+	}
 }
 
 func (w *Worker) Stop() {

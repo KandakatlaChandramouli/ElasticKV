@@ -1,12 +1,15 @@
 package shard
 
 import (
+	"sync/atomic"
+
 	"github.com/KandakatlaChandramouli/ElasticKV/internal/storage"
 )
 
 type Manager struct {
 	Workers    []*Worker
 	ShardCount uint64
+	Dropped    atomic.Uint64
 }
 
 func NewManager(
@@ -48,7 +51,7 @@ func NewManager(
 func (m *Manager) Dispatch(
 	key uint64,
 	payload []byte,
-) {
+) bool {
 
 	shardID := Route(
 		key,
@@ -60,7 +63,13 @@ func (m *Manager) Dispatch(
 		Payload:    payload,
 	}
 
-	m.Workers[shardID].Queue <- req
+	ok := m.Workers[shardID].TryEnqueue(req)
+
+	if !ok {
+		m.Dropped.Add(1)
+	}
+
+	return ok
 }
 
 func (m *Manager) Stop() {
