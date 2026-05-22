@@ -3,24 +3,32 @@ package hnsw
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/hnsw"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/hnsw/core"
 )
 
-func BenchmarkHNSW(
+func BenchmarkHNSWSearch(
 	b *testing.B,
 ) {
 
-	runtime := engine.NewRuntime()
+	index := engine.New()
 
-	b.ReportAllocs()
+	vector := make([]float32, 768)
+
+	for i := 0; i < 10000; i++ {
+
+		index.Insert(
+			i,
+			vector,
+		)
+	}
 
 	b.ResetTimer()
 
 	for i := 0; i < b.N; i++ {
-		runtime.Execute()
-	}
 
-	if runtime.Count() == 0 {
-		b.Fatal("execution failed")
+		_ = index.Search(
+			vector,
+			10,
+		)
 	}
 }
