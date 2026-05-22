@@ -1,14 +1,14 @@
 package stream
 
 type Stream struct {
-    ID int
+	ID int
 }
 
 func New(
-    id int,
+	id int,
 ) Stream {
 
-    return Stream{
-        ID: id,
-    }
+	return Stream{
+		ID: id,
+	}
 }

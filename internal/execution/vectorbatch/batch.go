@@ -1,24 +1,24 @@
 package vectorbatch
 
 type Batch struct {
-    Rows [][]int
+	Rows [][]int
 }
 
 func New() *Batch {
-    return &Batch{
-        Rows: make([][]int, 0),
-    }
+	return &Batch{
+		Rows: make([][]int, 0),
+	}
 }
 
 func (b *Batch) Add(
-    row []int,
+	row []int,
 ) {
-    b.Rows = append(
-        b.Rows,
-        row,
-    )
+	b.Rows = append(
+		b.Rows,
+		row,
+	)
 }
 
 func (b *Batch) Count() int {
-    return len(b.Rows)
+	return len(b.Rows)
 }

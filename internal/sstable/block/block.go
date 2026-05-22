@@ -1,30 +1,30 @@
 package block
 
 type Entry struct {
-    Key string
-    Value []byte
+	Key   string
+	Value []byte
 }
 
 type Block struct {
-    Entries []Entry
+	Entries []Entry
 }
 
 func New() *Block {
-    return &Block{
-        Entries: make([]Entry, 0),
-    }
+	return &Block{
+		Entries: make([]Entry, 0),
+	}
 }
 
 func (b *Block) Add(
-    key string,
-    value []byte,
+	key string,
+	value []byte,
 ) {
 
-    b.Entries = append(
-        b.Entries,
-        Entry{
-            Key: key,
-            Value: value,
-        },
-    )
+	b.Entries = append(
+		b.Entries,
+		Entry{
+			Key:   key,
+			Value: value,
+		},
+	)
 }

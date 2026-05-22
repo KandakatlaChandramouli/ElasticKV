@@ -10,14 +10,17 @@ func BenchmarkBlock(
 	b *testing.B,
 ) {
 
-	runtime := engine.NewRuntime()
+	block := engine.New()
+
+	value := make([]byte, 256)
 
 	b.ResetTimer()
 
 	for i := 0; i < b.N; i++ {
 
-		if !runtime.Execute() {
-			b.Fatal("execution failed")
-		}
+		block.Add(
+			"key",
+			value,
+		)
 	}
 }
