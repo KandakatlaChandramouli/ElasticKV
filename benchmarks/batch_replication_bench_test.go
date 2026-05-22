@@ -89,9 +89,9 @@ func BenchmarkBatchReplication(
 		replicator.Replicate(frame)
 	}
 
-	time.Sleep(1 * time.Second)
-
 	b.StopTimer()
+
+	time.Sleep(1 * time.Second)
 
 	b.Logf(
 		"Sent = %d",
