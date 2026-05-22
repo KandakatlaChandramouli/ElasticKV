@@ -14,3 +14,4 @@ vendor/
 *.snapshot
 *.sst
 segment_*.sst
+*.tar.gz
