@@ -15,3 +15,4 @@ vendor/
 *.sst
 segment_*.sst
 *.tar.gz
+*.o
