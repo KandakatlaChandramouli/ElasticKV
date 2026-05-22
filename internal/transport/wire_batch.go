@@ -68,22 +68,17 @@ func (r *WireBatchReplicator) Start() {
 
 			writer := bufio.NewWriterSize(
 				buffer,
-				1024*1024,
+				2*1024*1024,
 			)
 
 			success := uint64(0)
 
 			for _, frame := range batch {
 
-				data, err := EncodeFrame(
+				err := WriteFrame(
+					writer,
 					frame,
 				)
-
-				if err != nil {
-					continue
-				}
-
-				_, err = writer.Write(data)
 
 				if err != nil {
 					continue
