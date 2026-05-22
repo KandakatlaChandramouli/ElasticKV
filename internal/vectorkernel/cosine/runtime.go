@@ -1,20 +1,26 @@
 package cosine
 
-import "sync/atomic"
+func Similarity(
+	a []float32,
+	b []float32,
+) float32 {
 
-type Runtime struct {
-	Ops atomic.Uint64
-}
+	var dot float32
+	var normA float32
+	var normB float32
 
-func NewRuntime() *Runtime {
-	return &Runtime{}
-}
+	for i := 0; i < len(a); i++ {
 
-func (r *Runtime) Execute() bool {
-	r.Ops.Add(1)
-	return true
-}
+		dot += a[i] * b[i]
 
-func (r *Runtime) Count() uint64 {
-	return r.Ops.Load()
+		normA += a[i] * a[i]
+
+		normB += b[i] * b[i]
+	}
+
+	if normA == 0 || normB == 0 {
+		return 0
+	}
+
+	return dot
 }

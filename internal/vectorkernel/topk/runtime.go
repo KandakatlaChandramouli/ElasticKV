@@ -1,20 +1,28 @@
 package topk
 
-import "sync/atomic"
+import "sort"
 
-type Runtime struct {
-	Ops atomic.Uint64
-}
+func Select(
+	values []float32,
+	k int,
+) []float32 {
 
-func NewRuntime() *Runtime {
-	return &Runtime{}
-}
+	sorted := make(
+		[]float32,
+		len(values),
+	)
 
-func (r *Runtime) Execute() bool {
-	r.Ops.Add(1)
-	return true
-}
+	copy(
+		sorted,
+		values,
+	)
 
-func (r *Runtime) Count() uint64 {
-	return r.Ops.Load()
+	sort.Slice(
+		sorted,
+		func(i, j int) bool {
+			return sorted[i] > sorted[j]
+		},
+	)
+
+	return sorted[:k]
 }

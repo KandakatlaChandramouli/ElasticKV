@@ -1,12 +1,12 @@
-package cosine
+package l2
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorkernel/cosine"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorkernel/l2"
 )
 
-func BenchmarkCosine(
+func BenchmarkL2(
 	b *testing.B,
 ) {
 
@@ -21,6 +21,6 @@ func BenchmarkCosine(
 	b.ResetTimer()
 
 	for i := 0; i < b.N; i++ {
-		engine.Similarity(a, c)
+		engine.Distance(a, c)
 	}
 }

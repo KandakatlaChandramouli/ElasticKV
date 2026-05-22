@@ -1,12 +1,12 @@
-package cosine
+package dotproduct
 
 import (
 	"testing"
 
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorkernel/cosine"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/vectorkernel/dotproduct"
 )
 
-func BenchmarkCosine(
+func BenchmarkDotProduct(
 	b *testing.B,
 ) {
 
@@ -21,6 +21,6 @@ func BenchmarkCosine(
 	b.ResetTimer()
 
 	for i := 0; i < b.N; i++ {
-		engine.Similarity(a, c)
+		engine.Compute(a, c)
 	}
 }
