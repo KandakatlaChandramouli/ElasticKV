@@ -1,6 +1,7 @@
 package checkpoint
 
 import (
+	"bufio"
 	"encoding/binary"
 	"io"
 	"os"
@@ -24,6 +25,11 @@ func SaveBinary(
 
 	defer file.Close()
 
+	writer := bufio.NewWriterSize(
+		file,
+		4*1024*1024,
+	)
+
 	header := make([]byte, HeaderSize)
 
 	binary.LittleEndian.PutUint64(
@@ -41,15 +47,15 @@ func SaveBinary(
 		metadata.EntryCount,
 	)
 
-	_, err = file.Write(header)
+	_, err = writer.Write(header)
 
 	if err != nil {
 		return err
 	}
 
-	for key, value := range state {
+	entryHeader := make([]byte, 16)
 
-		entryHeader := make([]byte, 16)
+	for key, value := range state {
 
 		binary.LittleEndian.PutUint64(
 			entryHeader[0:8],
@@ -61,17 +67,27 @@ func SaveBinary(
 			uint64(len(value)),
 		)
 
-		_, err = file.Write(entryHeader)
+		_, err = writer.Write(
+			entryHeader,
+		)
 
 		if err != nil {
 			return err
 		}
 
-		_, err = file.Write(value)
+		_, err = writer.Write(
+			value,
+		)
 
 		if err != nil {
 			return err
 		}
+	}
+
+	err = writer.Flush()
+
+	if err != nil {
+		return err
 	}
 
 	return file.Sync()
@@ -96,10 +112,15 @@ func LoadBinary(
 
 	defer file.Close()
 
+	reader := bufio.NewReaderSize(
+		file,
+		4*1024*1024,
+	)
+
 	header := make([]byte, HeaderSize)
 
 	_, err = io.ReadFull(
-		file,
+		reader,
 		header,
 	)
 
@@ -126,12 +147,12 @@ func LoadBinary(
 		map[uint64][]byte,
 	)
 
+	entryHeader := make([]byte, 16)
+
 	for {
 
-		entryHeader := make([]byte, 16)
-
 		_, err := io.ReadFull(
-			file,
+			reader,
 			entryHeader,
 		)
 
@@ -162,7 +183,7 @@ func LoadBinary(
 		)
 
 		_, err = io.ReadFull(
-			file,
+			reader,
 			value,
 		)
 
