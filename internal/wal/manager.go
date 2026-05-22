@@ -13,6 +13,7 @@ type Manager struct {
 	MaxSegmentSize uint64
 	ActiveID       uint64
 	ActiveSegment  *Segment
+	Index          *SparseIndex
 	Mutex          sync.Mutex
 }
 
@@ -33,6 +34,9 @@ func OpenManager(
 	manager := &Manager{
 		Directory:      directory,
 		MaxSegmentSize: maxSegmentSize,
+		Index: NewSparseIndex(
+			1024,
+		),
 	}
 
 	err = manager.rotate()
@@ -115,11 +119,21 @@ func (m *Manager) Append(
 		}
 	}
 
-	_, err := m.ActiveSegment.Append(
+	offset, err := m.ActiveSegment.Append(
 		entry,
 	)
 
-	return err
+	if err != nil {
+		return err
+	}
+
+	m.Index.Add(
+		entry.SequenceID,
+		offset,
+		m.ActiveID-1,
+	)
+
+	return nil
 }
 
 func (m *Manager) Sync() error {
@@ -185,4 +199,13 @@ func (m *Manager) Replay(
 	}
 
 	return nil
+}
+
+func (m *Manager) Find(
+	sequenceID uint64,
+) (IndexEntry, bool) {
+
+	return m.Index.Find(
+		sequenceID,
+	)
 }
