@@ -1,25 +1,25 @@
 package querydistribution
 
 type Query struct {
-    ID int
+	ID int
 }
 
 func Distribute(
-    queries []Query,
-    shards int,
+	queries []Query,
+	shards int,
 ) [][]Query {
 
-    groups := make([][]Query, shards)
+	groups := make([][]Query, shards)
 
-    for i, query := range queries {
+	for i, query := range queries {
 
-        shard := i % shards
+		shard := i % shards
 
-        groups[shard] = append(
-            groups[shard],
-            query,
-        )
-    }
+		groups[shard] = append(
+			groups[shard],
+			query,
+		)
+	}
 
-    return groups
+	return groups
 }

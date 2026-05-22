@@ -1,27 +1,27 @@
 package deviceplanner
 
 import (
-    "testing"
+	"testing"
 
-    engine "github.com/KandakatlaChandramouli/ElasticKV/internal/multigpu/deviceplanner"
+	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/multigpu/deviceplanner"
 )
 
 func BenchmarkDevicePlanner(
-    b *testing.B,
+	b *testing.B,
 ) {
 
-    devices := []engine.Device{
-        {ID:0, MemoryGB:16},
-        {ID:1, MemoryGB:16},
-    }
+	devices := []engine.Device{
+		{ID: 0, MemoryGB: 16},
+		{ID: 1, MemoryGB: 16},
+	}
 
-    b.ResetTimer()
+	b.ResetTimer()
 
-    for i := 0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 
-        _ = engine.Plan(
-            devices,
-            10000,
-        )
-    }
+		_ = engine.Plan(
+			devices,
+			10000,
+		)
+	}
 }
