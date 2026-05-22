@@ -13,14 +13,14 @@ func BenchmarkAdaptiveController(
 ) {
 
 	controller := adaptive.NewController(
-		1024,
+		64,
 	)
 
 	var wg sync.WaitGroup
 
 	b.ResetTimer()
 
-	for g := 0; g < 256; g++ {
+	for g := 0; g < 1024; g++ {
 
 		wg.Add(1)
 
@@ -28,14 +28,14 @@ func BenchmarkAdaptiveController(
 
 			defer wg.Done()
 
-			for i := 0; i < b.N/256; i++ {
+			for i := 0; i < b.N/1024; i++ {
 
 				ok := controller.Allow()
 
 				if ok {
 
 					time.Sleep(
-						time.Microsecond,
+						100 * time.Microsecond,
 					)
 
 					controller.Complete()
