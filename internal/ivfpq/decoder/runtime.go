@@ -3,7 +3,7 @@ package decoder
 import "sync/atomic"
 
 type Runtime struct {
-	Ops atomic.Uint64
+	Operations atomic.Uint64
 }
 
 func NewRuntime() *Runtime {
@@ -11,10 +11,10 @@ func NewRuntime() *Runtime {
 }
 
 func (r *Runtime) Execute() bool {
-	r.Ops.Add(1)
+	r.Operations.Add(1)
 	return true
 }
 
 func (r *Runtime) Count() uint64 {
-	return r.Ops.Load()
+	return r.Operations.Load()
 }

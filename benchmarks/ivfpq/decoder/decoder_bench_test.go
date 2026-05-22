@@ -24,6 +24,6 @@ func BenchmarkDecoder(
 	}
 
 	if runtime.Count() == 0 {
-		b.Fatal("invalid execution count")
+		b.Fatal("invalid runtime count")
 	}
 }
