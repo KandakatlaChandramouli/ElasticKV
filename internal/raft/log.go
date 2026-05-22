@@ -4,13 +4,13 @@ import "sync"
 
 type Entry struct {
 	Index uint64
-	Term uint64
-	Data []byte
+	Term  uint64
+	Data  []byte
 }
 
 type Log struct {
 	Entries []Entry
-	Mutex sync.RWMutex
+	Mutex   sync.RWMutex
 }
 
 func NewLog() *Log {

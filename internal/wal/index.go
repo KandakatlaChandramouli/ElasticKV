@@ -73,9 +73,7 @@ func (s *SparseIndex) Find(
 
 	if index >= len(s.Entries) {
 
-		return s.Entries[
-			len(s.Entries)-1,
-		], true
+		return s.Entries[len(s.Entries)-1], true
 	}
 
 	return s.Entries[index], true

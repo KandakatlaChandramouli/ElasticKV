@@ -6,12 +6,12 @@ import (
 )
 
 type Replicator struct {
-	Client    *Client
-	Queue     chan ReplicationFrame
-	Running   atomic.Bool
-	WG        sync.WaitGroup
-	Sent      atomic.Uint64
-	Dropped   atomic.Uint64
+	Client  *Client
+	Queue   chan ReplicationFrame
+	Running atomic.Bool
+	WG      sync.WaitGroup
+	Sent    atomic.Uint64
+	Dropped atomic.Uint64
 }
 
 func NewReplicator(
