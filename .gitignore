@@ -13,3 +13,4 @@ vendor/
 *.wal
 *.snapshot
 *.sst
+segment_*.sst
