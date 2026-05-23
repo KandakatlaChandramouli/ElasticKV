@@ -1,0 +1,12 @@
+{"Time":"2026-05-23T04:04:39.714036509Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking"}
+{"Time":"2026-05-23T04:04:39.71775713Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Output":"goos: linux\n"}
+{"Time":"2026-05-23T04:04:39.717848227Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Output":"goarch: amd64\n"}
+{"Time":"2026-05-23T04:04:39.717854887Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking\n"}
+{"Time":"2026-05-23T04:04:39.717862581Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-23T04:04:39.717869613Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Test":"BenchmarkChunking"}
+{"Time":"2026-05-23T04:04:39.717883721Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Test":"BenchmarkChunking","Output":"=== RUN   BenchmarkChunking\n"}
+{"Time":"2026-05-23T04:04:39.717889321Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Test":"BenchmarkChunking","Output":"BenchmarkChunking\n"}
+{"Time":"2026-05-23T04:04:39.718735908Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Test":"BenchmarkChunking","Output":"BenchmarkChunking-2   \t       5\t      3972 ns/op\n"}
+{"Time":"2026-05-23T04:04:39.718757958Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Output":"PASS\n"}
+{"Time":"2026-05-23T04:04:39.719156181Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking\t0.004s\n"}
+{"Time":"2026-05-23T04:04:39.719179688Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rag/chunking","Elapsed":0.005}

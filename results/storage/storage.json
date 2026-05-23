@@ -1,0 +1,24 @@
+{"Time":"2026-05-23T04:04:30.882569645Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm"}
+{"Time":"2026-05-23T04:04:30.886116871Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Output":"goos: linux\n"}
+{"Time":"2026-05-23T04:04:30.886156257Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Output":"goarch: amd64\n"}
+{"Time":"2026-05-23T04:04:30.886162351Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm\n"}
+{"Time":"2026-05-23T04:04:30.886171911Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-23T04:04:30.88617854Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Test":"BenchmarkLSMFlush"}
+{"Time":"2026-05-23T04:04:30.886182798Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Test":"BenchmarkLSMFlush","Output":"=== RUN   BenchmarkLSMFlush\n"}
+{"Time":"2026-05-23T04:04:30.886187465Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Test":"BenchmarkLSMFlush","Output":"BenchmarkLSMFlush\n"}
+{"Time":"2026-05-23T04:04:34.713056554Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Test":"BenchmarkLSMFlush","Output":"BenchmarkLSMFlush-2   \t       5\t 627387320 ns/op\n"}
+{"Time":"2026-05-23T04:04:34.713112264Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Output":"PASS\n"}
+{"Time":"2026-05-23T04:04:34.71415952Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm\t3.831s\n"}
+{"Time":"2026-05-23T04:04:34.714208289Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm","Elapsed":3.832}
+{"Time":"2026-05-23T04:04:34.715249246Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable"}
+{"Time":"2026-05-23T04:04:34.71809593Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Output":"goos: linux\n"}
+{"Time":"2026-05-23T04:04:34.718135581Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Output":"goarch: amd64\n"}
+{"Time":"2026-05-23T04:04:34.718142241Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable\n"}
+{"Time":"2026-05-23T04:04:34.71815387Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-23T04:04:34.718160955Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Test":"BenchmarkMemTable"}
+{"Time":"2026-05-23T04:04:34.718165601Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Test":"BenchmarkMemTable","Output":"=== RUN   BenchmarkMemTable\n"}
+{"Time":"2026-05-23T04:04:34.71817074Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Test":"BenchmarkMemTable","Output":"BenchmarkMemTable\n"}
+{"Time":"2026-05-23T04:04:34.719244699Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Test":"BenchmarkMemTable","Output":"BenchmarkMemTable-2   \t       5\t       181.6 ns/op\n"}
+{"Time":"2026-05-23T04:04:34.7192738Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Output":"PASS\n"}
+{"Time":"2026-05-23T04:04:34.719601409Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable\t0.004s\n"}
+{"Time":"2026-05-23T04:04:34.719630305Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/lsm/memtable","Elapsed":0.004}

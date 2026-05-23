@@ -1,0 +1,12 @@
+{"Time":"2026-05-23T04:04:05.612343697Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner"}
+{"Time":"2026-05-23T04:04:05.615011248Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Output":"goos: linux\n"}
+{"Time":"2026-05-23T04:04:05.615042471Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Output":"goarch: amd64\n"}
+{"Time":"2026-05-23T04:04:05.615049822Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner\n"}
+{"Time":"2026-05-23T04:04:05.615076117Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-23T04:04:05.61508592Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Test":"BenchmarkDevicePlanner"}
+{"Time":"2026-05-23T04:04:05.615091065Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Test":"BenchmarkDevicePlanner","Output":"=== RUN   BenchmarkDevicePlanner\n"}
+{"Time":"2026-05-23T04:04:05.615097091Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Test":"BenchmarkDevicePlanner","Output":"BenchmarkDevicePlanner\n"}
+{"Time":"2026-05-23T04:04:05.616598148Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Test":"BenchmarkDevicePlanner","Output":"BenchmarkDevicePlanner-2   \t       3\t    148260 ns/op\n"}
+{"Time":"2026-05-23T04:04:05.616632134Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Output":"PASS\n"}
+{"Time":"2026-05-23T04:04:05.616902452Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner\t0.004s\n"}
+{"Time":"2026-05-23T04:04:05.616934349Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/multigpu/deviceplanner","Elapsed":0.005}

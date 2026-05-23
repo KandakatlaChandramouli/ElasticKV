@@ -1,0 +1,12 @@
+{"Time":"2026-05-23T04:03:54.243013985Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser"}
+{"Time":"2026-05-23T04:03:54.245421556Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Output":"goos: linux\n"}
+{"Time":"2026-05-23T04:03:54.245455739Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Output":"goarch: amd64\n"}
+{"Time":"2026-05-23T04:03:54.245461792Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser\n"}
+{"Time":"2026-05-23T04:03:54.245471633Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-23T04:03:54.24547857Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Test":"BenchmarkParser"}
+{"Time":"2026-05-23T04:03:54.245482979Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Test":"BenchmarkParser","Output":"=== RUN   BenchmarkParser\n"}
+{"Time":"2026-05-23T04:03:54.24548895Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Test":"BenchmarkParser","Output":"BenchmarkParser\n"}
+{"Time":"2026-05-23T04:03:54.246397447Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Test":"BenchmarkParser","Output":"BenchmarkParser-2   \t       5\t        82.80 ns/op\n"}
+{"Time":"2026-05-23T04:03:54.246438276Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Output":"PASS\n"}
+{"Time":"2026-05-23T04:03:54.24679902Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser\t0.004s\n"}
+{"Time":"2026-05-23T04:03:54.24683888Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/querysql/parser","Elapsed":0.004}

@@ -1,0 +1,12 @@
+{"Time":"2026-05-23T04:04:14.157341302Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy"}
+{"Time":"2026-05-23T04:04:14.159707164Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Output":"goos: linux\n"}
+{"Time":"2026-05-23T04:04:14.159735703Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Output":"goarch: amd64\n"}
+{"Time":"2026-05-23T04:04:14.159755877Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy\n"}
+{"Time":"2026-05-23T04:04:14.159763341Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-23T04:04:14.159770427Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Test":"BenchmarkZeroCopy"}
+{"Time":"2026-05-23T04:04:14.159774384Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Test":"BenchmarkZeroCopy","Output":"=== RUN   BenchmarkZeroCopy\n"}
+{"Time":"2026-05-23T04:04:14.159782595Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Test":"BenchmarkZeroCopy","Output":"BenchmarkZeroCopy\n"}
+{"Time":"2026-05-23T04:04:14.164619635Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Test":"BenchmarkZeroCopy","Output":"BenchmarkZeroCopy-2   \t       5\t    234939 ns/op\n"}
+{"Time":"2026-05-23T04:04:14.164650557Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Output":"PASS\n"}
+{"Time":"2026-05-23T04:04:14.165111932Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy\t0.007s\n"}
+{"Time":"2026-05-23T04:04:14.165146957Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/rdma/zerocopy","Elapsed":0.008}
