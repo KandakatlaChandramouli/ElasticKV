@@ -2,42 +2,38 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"runtime/pprof"
-	"time"
-
-	engine "github.com/KandakatlaChandramouli/ElasticKV/internal/hnsw/core"
+	"runtime"
 )
 
 func main() {
 
-	f, _ := os.Create("cpu.prof")
+	var mem runtime.MemStats
 
-	pprof.StartCPUProfile(f)
-
-	defer pprof.StopCPUProfile()
-
-	start := time.Now()
-
-	index := engine.New()
-
-	vector := make([]float32, 768)
-
-	for i := 0; i < 5000; i++ {
-
-		index.Insert(
-			i,
-			vector,
-		)
-	}
-
-	index.Search(
-		vector,
-		10,
+	runtime.ReadMemStats(
+		&mem,
 	)
 
 	fmt.Println(
-		"elapsed:",
-		time.Since(start),
+		"\n=== ElasticKV Memory Profile ===\n",
+	)
+
+	fmt.Printf(
+		"Alloc = %v MB\n",
+		mem.Alloc / 1024 / 1024,
+	)
+
+	fmt.Printf(
+		"TotalAlloc = %v MB\n",
+		mem.TotalAlloc / 1024 / 1024,
+	)
+
+	fmt.Printf(
+		"Sys = %v MB\n",
+		mem.Sys / 1024 / 1024,
+	)
+
+	fmt.Printf(
+		"NumGC = %v\n",
+		mem.NumGC,
 	)
 }

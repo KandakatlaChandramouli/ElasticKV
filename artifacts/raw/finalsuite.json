@@ -1,0 +1,24 @@
+{"Time":"2026-05-23T04:23:34.218099587Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu"}
+{"Time":"2026-05-23T04:23:34.22418349Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Output":"goos: linux\n"}
+{"Time":"2026-05-23T04:23:34.224232805Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Output":"goarch: amd64\n"}
+{"Time":"2026-05-23T04:23:34.224239821Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu\n"}
+{"Time":"2026-05-23T04:23:34.22425359Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-23T04:23:34.224264146Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Test":"BenchmarkGPUKernel"}
+{"Time":"2026-05-23T04:23:34.224269819Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Test":"BenchmarkGPUKernel","Output":"=== RUN   BenchmarkGPUKernel\n"}
+{"Time":"2026-05-23T04:23:34.224279142Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Test":"BenchmarkGPUKernel","Output":"BenchmarkGPUKernel\n"}
+{"Time":"2026-05-23T04:23:34.34562618Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Test":"BenchmarkGPUKernel","Output":"BenchmarkGPUKernel-2   \t"}
+{"Time":"2026-05-23T04:23:34.34584335Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Test":"BenchmarkGPUKernel","Output":"       5\t  12956044 ns/op\n"}
+{"Time":"2026-05-23T04:23:34.345863323Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Output":"PASS\n"}
+{"Time":"2026-05-23T04:23:34.350889025Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Output":"ok  \tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu\t0.132s\n"}
+{"Time":"2026-05-23T04:23:34.350923834Z","Action":"pass","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/gpu","Elapsed":0.133}
+{"Time":"2026-05-23T04:23:34.351602727Z","Action":"start","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw"}
+{"Time":"2026-05-23T04:23:34.356318165Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Output":"goos: linux\n"}
+{"Time":"2026-05-23T04:23:34.35634626Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Output":"goarch: amd64\n"}
+{"Time":"2026-05-23T04:23:34.356352124Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Output":"pkg: github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw\n"}
+{"Time":"2026-05-23T04:23:34.356359588Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Output":"cpu: Intel(R) Xeon(R) CPU @ 2.00GHz\n"}
+{"Time":"2026-05-23T04:23:34.356366772Z","Action":"run","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Test":"BenchmarkHNSWRecall"}
+{"Time":"2026-05-23T04:23:34.356370978Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Test":"BenchmarkHNSWRecall","Output":"=== RUN   BenchmarkHNSWRecall\n"}
+{"Time":"2026-05-23T04:23:34.356376163Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Test":"BenchmarkHNSWRecall","Output":"BenchmarkHNSWRecall\n"}
+{"Time":"2026-05-23T04:30:44.812212138Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Test":"BenchmarkHNSWRecall","Output":"signal: interrupt\n"}
+{"Time":"2026-05-23T04:30:44.81232449Z","Action":"output","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Output":"FAIL\tgithub.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw\t430.461s\n"}
+{"Time":"2026-05-23T04:30:44.812335943Z","Action":"fail","Package":"github.com/KandakatlaChandramouli/ElasticKV/benchmarks/finalsuite/hnsw","Elapsed":430.461}

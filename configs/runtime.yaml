@@ -1,0 +1,15 @@
+runtime:
+  workers: 8
+  gpu_enabled: true
+  distributed: true
+  vector_dim: 768
+  topk: 10
+
+storage:
+  wal: true
+  sstable: true
+  mvcc: true
+
+network:
+  rdma: true
+  raft: true
